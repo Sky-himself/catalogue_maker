@@ -1,19 +1,27 @@
-# catalogue_maker
+# Catalogue Maker
 
-An app to ease the process of making the catalog of products for companies
+A Flutter app that turns product details and photos into a PDF catalogue. It grew out of a recurring catalogue workflow where gathering information, taking photos, and assembling the final PDF took place in separate tools.
 
-## Getting Started
+![Catalogue Maker project and product screens](docs/images/catalogue-maker-screens.jpg)
 
-topics and challenges:
-- data structure of the app(handling products and projects data in a nice way)
-- Provider state management and nested providers
-- picking images from camera and gallery and storing a copy of them in the proper path
-- working with SQLite and storing the app state on device's storage
-- creating a template and generating PDF files from the data that user inputs
+## Workflow
 
-## Features to be added
+1. Create a catalogue project and add its products.
+2. Fill in product details and choose photos from the gallery or take them with the camera.
+3. Open the PDF preview to review the generated catalogue.
 
-the next feature would be the ability to remove the background of the images that user provides, and this can be done by using a service by it's API(which is not free in long term usages) or to provide a custom API that does this job
+Projects and products use Provider for state management and SQLite for local persistence. The app stores copies of chosen images on the device. Start with [the project screens](lib/screens), [the database helper](lib/helpers/db_helper.dart), and [the PDF preview](lib/screens/view_pdf_screen.dart).
+
+Automatic photo background removal is a future idea.
+
+## Run locally
+
+Use a Flutter SDK that satisfies the Dart 2 constraint in [`pubspec.yaml`](pubspec.yaml). Run on a mobile device or emulator to try the image picker and on-device database.
+
+```sh
+flutter pub get
+flutter run
+```
 
 ## Dependency updates
 
