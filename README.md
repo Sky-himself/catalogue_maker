@@ -14,3 +14,10 @@ topics and challenges:
 ## Features to be added
 
 the next feature would be the ability to remove the background of the images that user provides, and this can be done by using a service by it's API(which is not free in long term usages) or to provide a custom API that does this job
+
+## Dependency updates
+
+Use `flutter pub get` to install the versions recorded in `pubspec.lock`.
+The `archive` constraint keeps the resolver on releases with the fixes
+for CVE-2023-39139 and CVE-2023-39137. Keep the version floor when updating
+the packages that use it and review the lockfile before committing changes.

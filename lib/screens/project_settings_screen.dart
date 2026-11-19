@@ -103,7 +103,7 @@ class _ProjectSettingsScreenState extends State<ProjectSettingsScreen> {
                 ElevatedButton.icon(
                   style: ButtonStyle(
                     backgroundColor:
-                        MaterialStateProperty.all(Theme.of(context).errorColor),
+                        MaterialStateProperty.all(Theme.of(context).colorScheme.error),
                   ),
                   onPressed: () {
                     Navigator.of(context).pop();
