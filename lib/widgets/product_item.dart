@@ -82,7 +82,7 @@ class ProductItem extends StatelessWidget {
                     },
                     icon: Icon(
                       Icons.clear,
-                      color: Theme.of(context).errorColor,
+                      color: Theme.of(context).colorScheme.error,
                       size: 15,
                     ),
                   ),

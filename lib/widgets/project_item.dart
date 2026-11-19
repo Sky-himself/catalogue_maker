@@ -27,7 +27,7 @@ class ProjectItem extends StatelessWidget {
       child: Dismissible(
         key: ValueKey(project.id),
         background: Card(
-          color: Theme.of(context).errorColor,
+          color: Theme.of(context).colorScheme.error,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 14.0),
             child: Row(

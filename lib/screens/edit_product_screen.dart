@@ -58,7 +58,7 @@ class EditProductScreen extends StatelessWidget {
                       },
                       child: Icon(
                         Icons.clear,
-                        color: Theme.of(context).errorColor,
+                        color: Theme.of(context).colorScheme.error,
                       ),
                     ),
                   ),
@@ -254,7 +254,7 @@ class EditProductScreen extends StatelessWidget {
                             flex: 2,
                             child: ElevatedButton.icon(
                               style: ElevatedButton.styleFrom(
-                                  primary: Theme.of(context).errorColor),
+                                  backgroundColor: Theme.of(context).colorScheme.error),
                               onPressed: () {
                                 Navigator.of(context).pop();
                               },
